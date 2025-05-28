@@ -1,5 +1,6 @@
 #!/bin/bash
 
-# Readlink of the script
+# Dirname of the script
 
-readlink -f "$0"
+path="/tmp/myfolder/myfile.csv"
+echo $(dirname "$path")
