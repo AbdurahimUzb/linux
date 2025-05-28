@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# IFS read for ifs.txt
+# Readlink of the script
 
-while IFS= read -r line; do
-    echo "$line"
-done < ifs.txt
+readlink -f "$0"
