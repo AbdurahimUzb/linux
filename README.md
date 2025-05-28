@@ -1,3 +1,3 @@
 # Linux darsi.
 
-# IFS bilan example
+# IFS bilan file.txt dan ma'lumotlarni o'qishga example bo'ldi

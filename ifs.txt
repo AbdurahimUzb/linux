@@ -1,0 +1,3 @@
+ism, yosh, kasb
+Ali, 23, dasturchi
+Vali, 30, o'qituvchi
