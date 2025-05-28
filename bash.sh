@@ -3,4 +3,5 @@
 # Dirname of the script
 
 path="/tmp/myfolder/myfile.csv"
-echo $(dirname "$path")
+echo "The path is: $(basename "$path")"
+echo "The directory is: $(dirname "$path")"

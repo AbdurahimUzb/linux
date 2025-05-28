@@ -1,3 +1,3 @@
 # Linux darsi.
 
-# Dirname bilan example
+# Dirname va Basename bilan example
