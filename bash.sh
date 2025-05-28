@@ -4,11 +4,13 @@
 
 matn="olma,anor,badam,uzum,anjir,shaftoli,tarvuz,olcha,anjir,uzum"
 
-IFS=',' read -r -a arr <<< "$matn"
+sanoq=0
 
-echo "Array elements:"
+IFS=","
 
-for i in "${arr[@]}"; do
-    echo "$i"
+for meva in $matn; do
+    echo "Meva: $meva"
+    sanoq=$((sanoq + 1))
 done
-echo "Number of elements in the array: ${#arr[@]}"
+
+printf "\nMevalar soni: %s\n" "$sanoq"
