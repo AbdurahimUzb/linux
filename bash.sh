@@ -1,9 +1,14 @@
 #!/bin/bash
 
-if [[ -f "README.md" ]]; then
-    echo "File exists."
-    exit 0
-else
-    echo "File does not exist."
-    exit 1
-fi
+# IFS example
+
+matn="olma,anor,badam,uzum,anjir,shaftoli,tarvuz,olcha,anjir,uzum"
+
+IFS=',' read -r -a arr <<< "$matn"
+
+echo "Array elements:"
+
+for i in "${arr[@]}"; do
+    echo "$i"
+done
+echo "Number of elements in the array: ${#arr[@]}"
