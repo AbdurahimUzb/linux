@@ -2,4 +2,4 @@
 
 # awk 'pattern { action }' filename
 
-awk '{ print $1, $3 }' awk.txt
+awk '$2 == 30 { print }' awk.txt
