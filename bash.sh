@@ -2,4 +2,4 @@
 
 # awk 'pattern { action }' filename
 
-awk '$2 == 30 { print }' awk.txt
+awk 'BEGIN { print "Boshlanishi" } { print } END { print "Tugashi" }' awk.txt
