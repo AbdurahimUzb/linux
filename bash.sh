@@ -2,4 +2,4 @@
 
 # awk 'pattern { action }' filename
 
-awk 'BEGIN { print "Boshlanishi" } { print } END { print "Tugashi" }' awk.txt
+awk -F',' '{print $1, $3}' awk.txt
