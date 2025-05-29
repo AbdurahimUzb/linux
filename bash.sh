@@ -4,6 +4,9 @@
 
 my_array=(apple banana cherry)
 my_array+=(orange grape)
+count=1
 
-echo "${my_array[@]}"
-echo "Array uzunligi: ${#my_array[@]}"
+for fruit in "${my_array[@]}"; do
+  echo "Meva ${count} $fruit"
+    ((count++))
+done
