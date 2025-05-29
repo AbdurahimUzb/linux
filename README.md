@@ -1,3 +1,3 @@
 # Linux darsi.
 
-# Array ga misollar
+# AWK asoslari ga misollar
