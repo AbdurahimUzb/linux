@@ -1,8 +1,19 @@
 #!/bin/bash
 
-mevalar=(olma anor uzum)
+colors=(red green yellow)
 
+echo "${colors[@]}"
 
-for i in "${!mevalar[@]}"; do
-    echo "Meva: ${mevalar[$i]}"
+echo "Arraydagi 3 elementni chiqazish: ${colors[2]}"
+
+colors+=(blue)
+
+echo "${colors[@]}"
+echo "Array length: ${#colors[@]}"
+
+for color in "${!colors[@]}"; do
+  echo "Color index: $color Value: ${colors[$color]}"
 done
+
+unset colors[0]
+echo "${colors[@]}"
