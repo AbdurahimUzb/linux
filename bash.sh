@@ -3,7 +3,6 @@
 # declare of the script
 
 my_array=(apple banana cherry)
+my_array+=(orange grape)
 
-echo "${my_array[0]}"
-echo "${my_array[1]}"
-echo "${my_array[2]}"
+echo "${my_array[@]}"
