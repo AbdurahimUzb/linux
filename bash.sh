@@ -2,4 +2,4 @@
 
 # awk 'pattern { action }' filename
 
-awk '{ print }' awk.txt
+awk '{ print $1 }' awk.txt
