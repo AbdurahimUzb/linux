@@ -1,3 +1,3 @@
 # Linux darsi.
 
-# AWK asoslari ga misollar
+# AWK va Cron orqlik kichik practice.
