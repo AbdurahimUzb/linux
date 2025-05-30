@@ -1,3 +1,3 @@
 # Linux darsi.
 
-# AWK va Cron orqlik kichik practice.
+# AWK and Telegram bot send message simple project.
