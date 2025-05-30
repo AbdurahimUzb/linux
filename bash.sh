@@ -1,16 +1,16 @@
 #!/bin/bash
 
-token="7110505468:AAG2B7FnnWA6m4ggsZJ6CKnVXGLb_YZkMX0"
-chatid="214959122"
+# 1-Vazifa student.txt file example
+#awk '{ print $2 }' students.txt
 
-used=$(free -m | awk '/^Mem:/{print $3}')
+# 2-Vazifa grades.txt file example
+# awk ' $3 >= 80 { print }' grades.txt
 
-echo "$used"
+# 3-Vazifa people.csv file example
+# awk -F',' '{ print $1, $3 }' people.csv
 
-if [[ $used -gt 3000 ]]; then
-    echo "Memory usage is high: $used MB"
-    # Uncomment the following line to send a message via Telegram
-     curl -s -X POST "https://api.telegram.org/bot$token/sendMessage" -d "chat_id=$chatid&text=Memory usage is high: $used MB"
-else
-    echo "Memory usage is normal: $used MB" >> /home/user/Desktop/GitHub/linux/log.txt
-fi
+# 4-Vazifa data.txt file example
+# awk '{ print NR }' data.txt
+
+# 5-Vazifa numbers.txt file example
+# awk '{ sum += $1 } END { print sum }' numbers.txt
