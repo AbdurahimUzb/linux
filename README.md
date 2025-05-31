@@ -1,3 +1,3 @@
 # Linux darsi.
 
-## AWK ga misollar
+## AWK da IF ga example.
