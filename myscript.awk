@@ -1,13 +1,15 @@
 # .awk
 
 BEGIN {
-    print "Ism, Yosh, Shahar\n"
+    print "Voyaga yetganlar ro'yxarti:"
 }
 
-{
-    print $1, $2, $3
+$2 >= 18 {
+    print $1, "->", $2, "yoshda"
 }
+
+
 
 END {
-    print "\nMa'lumot tugadi"
+    print "Tekshiruv yakunlandi."
 }
