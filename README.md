@@ -1,3 +1,3 @@
 # Linux darsi.
 
-## AWK da for loop ga example.
+## .awk file ga example bo'ldi.
