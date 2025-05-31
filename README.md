@@ -1,3 +1,3 @@
 # Linux darsi.
 
-## .awk file ga example bo'ldi.
+## awk -f myscript.awk students.csv

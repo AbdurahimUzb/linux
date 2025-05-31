@@ -1,15 +1,30 @@
 # .awk
 
 BEGIN {
-    print "Voyaga yetganlar ro'yxarti:"
+    FS = ","
+    print "Talabalar baho hisobotlari:"
+    print "-------------------------------"
 }
 
-$2 >= 18 {
-    print $1, "->", $2, "yoshda"
-}
+{
+    math = $2
+    physics = $3
+    english = $4
 
+    avg = (math + physics + english) / 3
+
+    printf "%s -> O'rtacha baho: %.2f ", $1, avg
+
+    if (avg >= 85)
+        print "(A'lochi)"
+    else
+        print ""
+
+    total_avg += avg
+    count++
+}
 
 
 END {
-    print "Tekshiruv yakunlandi."
+    print "-------------------------------"
 }
