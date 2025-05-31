@@ -1,3 +1,3 @@
 # Linux darsi.
 
-## AWK da IF ga example.
+## AWK da if va else ga example.
